@@ -3,7 +3,7 @@ import git
 
 def generate_commit_message(diff_text):
     if not diff_text.strip():
-        return "Changes made."
+        return "Latest changes"
     return f"Updated code with changes: {len(diff_text.splitlines())} lines affected."
 
 def main(repo_path):
